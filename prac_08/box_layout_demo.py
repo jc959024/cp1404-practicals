@@ -1,10 +1,9 @@
 from kivy.app import App
 from kivy.lang import Builder
-from kivy.uix.boxlayout import BoxLayout
 
 
 def handle_greet():
-    print("Greet button pressed!")
+    print('greet')
 
 
 class BoxLayoutDemo(App):
