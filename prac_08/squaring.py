@@ -16,7 +16,7 @@ class SquareNumberApp(App):
     """ SquareNumberApp is a Kivy App for squaring a number """
     def build(self):
         """ build the Kivy app from the kv file """
-        Window.size = (200, 100)
+        Window.size = (400, 300)
         self.title = "Square Number"
         self.root = Builder.load_file('squaring.kv')
         return self.root
@@ -29,5 +29,24 @@ class SquareNumberApp(App):
         except ValueError:
             pass
 
+    def handle_up(self):
+        """ handle up button press, increment the input number by 1 """
+        try:
+            value = float(self.root.ids.input_number.text)
+            value += 1
+            self.root.ids.input_number.text = str(value)
+        except ValueError:
+            pass
+
+    def handle_down(self):
+        """ handle down button press, decrement the input number by 1 """
+        try:
+            value = float(self.root.ids.input_number.text)
+            value -= 1
+            self.root.ids.input_number.text = str(value)
+        except ValueError:
+            pass
+
 
 SquareNumberApp().run()
+
