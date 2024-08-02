@@ -29,3 +29,30 @@ def drive_taxi(taxi):
     else:
         print("You need to choose a taxi before you can drive")
         return 0
+
+
+def main():
+    taxis = [Taxi("Prius", 100), SilverServiceTaxi("Limo", 100, 2), SilverServiceTaxi("Hummer", 200, 4)]
+    current_taxi = None
+    total_bill = 0
+
+    print("Let's drive!")
+    while True:
+        choice = input("q)uit, c)hoose taxi, d)rive\n>>> ").lower()
+        if choice == 'q':
+            break
+        elif choice == 'c':
+            current_taxi = choose_taxi(taxis)
+        elif choice == 'd':
+            total_bill += drive_taxi(current_taxi)
+        else:
+            print("Invalid option")
+        print(f"Bill to date: ${total_bill:.2f}")
+
+    print(f"Total trip cost: ${total_bill:.2f}")
+    print("Taxis are now:")
+    display_taxis(taxis)
+
+
+if __name__ == "__main__":
+    main()
