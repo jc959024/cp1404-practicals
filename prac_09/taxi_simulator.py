@@ -16,3 +16,16 @@ def choose_taxi(taxis):
             return taxis[taxi_choice]
     print("Invalid taxi choice")
     return None
+
+
+def drive_taxi(taxi):
+    if taxi:
+        distance = float(input("Drive how far? "))
+        taxi.start_fare()
+        taxi.drive(distance)
+        fare = taxi.get_fare()
+        print(f"Your {taxi.name} trip cost you ${fare:.2f}")
+        return fare
+    else:
+        print("You need to choose a taxi before you can drive")
+        return 0
