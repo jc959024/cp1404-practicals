@@ -2,18 +2,15 @@
 CP1404/CP5632 Practical
 Testing demo using assert and doctest
 """
-import sys
-import os
 
-# Add the parent directory to the Python path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+import doctest
 from prac_06.car import Car
 
 
 def repeat_string(s, n):
     """Repeat string s, n times, with spaces in between."""
-    return " ".join([s] * n)
+    return ' '.join([s] * n)
 
 
 def is_long_word(word, length=5):
