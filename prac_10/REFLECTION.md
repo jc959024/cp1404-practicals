@@ -35,26 +35,26 @@ For each one, write a short explanation of what was good about your review.
 
 ### Good Code Review 1
 
-[]()
+[https://github.com/ashleyjwood/cp1404practicals/pull/4#issuecomment-2241069613]()
 
 ### Explanation
 
-...
+He writes well. I can only encourage him.
 
 ### Good Code Review 2
 
-[]()
+[https://github.com/YuqiWu04/CP1404-practicals/pull/5#event-13756730858]()
 
 ### Explanation
 
-...
+I advised him to commit more often when he finished his homework.
 
 ## Practicals
 
 ### Regarding the **practical tasks** overall, what would you change if you were in charge of the subject?
 
-...
+I think it's pretty good!
 
 ### What did you do really well for practicals in this subject?
 
-...
+I have plenty of processes.
